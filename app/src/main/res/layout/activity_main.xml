@@ -1,28 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editTextInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Введіть текст"
-        android:inputType="text"
-        android:textStyle="italic" />
+    <EditText android:id="@+id/titleInput" android:hint="Назва фільму"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/yearInput" android:hint="Рік"
+        android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/genreInput" android:hint="Жанр"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/ratingInput" android:hint="Рейтинг"
+        android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Додати"
-        android:textColor="#FFFFFF" />
+    <Button android:id="@+id/addButton" android:text="Додати фільм"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+    <ListView android:id="@+id/listView"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
 </LinearLayout>
